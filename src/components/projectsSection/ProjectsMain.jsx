@@ -8,7 +8,7 @@ const projects = [
     name: "Ibima",
     year: "2025",
     align: "right",
-    image: "../../public/images/ibima.png",
+    image: "/images/ibima.png",
     link: "https://ibima.co.ke/",
     description: "A comprehensive insurance platform providing seamless insurance services and policy management across Kenya.",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
@@ -19,7 +19,7 @@ const projects = [
     name: "bizsure",
     year: "2025",
     align: "right",
-    image: "../../public/images/bizsure-insurance.jpg", // If you have a logo, update this path to the logo file
+    image: "/images/bizsure-insurance.jpg", // If you have a logo, update this path to the logo file
     link: "https://demo.surebiz.co.ke/",
     description: "A financial management application helping users track expenses and manage budgets effectively.",
     technologies: ["React", "Firebase", "Material UI", "Redux"],
@@ -30,7 +30,7 @@ const projects = [
     name: "kids playzone ",
     year: "J2025",
     align: "right",
-    image: "../../public/images/kids.png",
+    image: "/images/kids.png",
     link: "https://afrosayarigaming.co.ke/",
     description: "this is a kids website that i have only dealt with the UI/ux.",
     technologies: ["html,css,css3"],
