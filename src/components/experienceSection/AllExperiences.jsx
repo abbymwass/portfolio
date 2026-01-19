@@ -8,10 +8,6 @@ const experiences = [
     company: "Sys Nanatec",
     location: "Nairobi, Kasarani",
     date: "2022 - Present",
-    contact: {
-      phone: "+254 759 530195",
-      email: "info@nanatec.co.ke"
-    },
     responsibilities: [
       "Developing and maintaining responsive web applications using React and modern JavaScript",
       "Implementing reusable components and optimizing application performance",

@@ -2,9 +2,6 @@ import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
-import { useRef, useState } from "react";
-import { generatePDF } from "../../utils/pdfGenerator";
-import { FaFilePdf } from "react-icons/fa";
 
 const projects = [
   {
@@ -34,7 +31,7 @@ const projects = [
     year: "J2025",
     align: "right",
     image: "../../public/images/kids.png",
-    link: "https://kidsplayzone.nanatec.co.ke/",
+    link: "https://afrosayarigaming.co.ke/",
     description: "this is a kids website that i have only dealt with the UI/ux.",
     technologies: ["html,css,css3"],
     githubLink: "",
@@ -54,42 +51,6 @@ const projects = [
 ];
 
 const ProjectsMain = () => {
-  const projectsRef = useRef(null);
-  const [isGenerating, setIsGenerating] = useState(false);
-
-  const handleGeneratePDF = async () => {
-    if (!projectsRef.current) return;
-    
-    setIsGenerating(true);
-    
-    // Scroll to projects section to ensure all animations are triggered
-    const projectsSection = document.getElementById('projects');
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      // Wait for scroll and animations to complete
-      await new Promise(resolve => setTimeout(resolve, 2000));
-    }
-    
-    await generatePDF(
-      projectsRef.current,
-      'my-projects.pdf',
-      {
-        backgroundColor: '#0a0a0a',
-        orientation: 'portrait',
-        animationTimeout: 4000, // Give more time for animations
-        onStart: () => setIsGenerating(true),
-        onComplete: () => {
-          setIsGenerating(false);
-          alert('PDF generated successfully!');
-        },
-        onError: (error) => {
-          setIsGenerating(false);
-          console.error('PDF generation error:', error);
-        }
-      }
-    );
-  };
-
   return (
     <div id="projects" className="max-w-[1200px] mx-auto px-4">
       <motion.div
@@ -101,20 +62,7 @@ const ProjectsMain = () => {
         <ProjectsText />
       </motion.div>
       
-      {/* PDF Export Button */}
-      <div className="flex justify-center mt-8 mb-4">
-        <button
-          onClick={handleGeneratePDF}
-          disabled={isGenerating}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan to-orange text-white hover:shadow-lg hover:shadow-cyan/20 transition-all duration-500 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          <FaFilePdf className={isGenerating ? "animate-pulse" : ""} />
-          {isGenerating ? "Generating PDF..." : "Export to PDF"}
-        </button>
-      </div>
-
-      {/* Projects container with ref for PDF generation */}
-      <div ref={projectsRef} className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
+      <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
         {projects.map((project, index) => {
           return (
             <SingleProject

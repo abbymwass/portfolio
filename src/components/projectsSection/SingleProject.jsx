@@ -29,14 +29,9 @@ const SingleProject = ({
           <div className="flex items-center justify-between">
             <h2 className="md:text-4xl sm:text-3xl font-bold bg-gradient-to-r from-orange to-cyan bg-clip-text text-transparent">{name}</h2>
             {status === "Live" ? (
-              <motion.div 
-                className="relative flex items-center"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                <div className="absolute -inset-3 bg-red-500/40 rounded-full animate-ping"></div>
+              <div className="relative flex items-center">
                 <div className="relative w-5 h-5 bg-red-500 rounded-full shadow-lg shadow-red-500/50"></div>
-              </motion.div>
+              </div>
             ) : (
               <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                 status === "In Development" ? "bg-yellow-500/20 text-yellow-400" :

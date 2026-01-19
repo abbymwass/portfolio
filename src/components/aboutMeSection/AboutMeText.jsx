@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import { FaUser, FaCode, FaLightbulb, FaRocket, FaMusic, FaBrain } from "react-icons/fa";
 
 const AboutMeText = () => {
@@ -58,18 +57,6 @@ const AboutMeText = () => {
           </div>
         </div>
       </div>
-      <button className="border border-orange rounded-full py-2 px-4 text-lg flex gap-2 items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center group">
-        <Link
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={-120}
-          to="projects"
-          className="cursor-pointer text-white group-hover:text-cyan transition-all duration-500"
-        >
-          My Projects
-        </Link>
-      </button>
     </div>
   );
 };

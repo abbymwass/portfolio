@@ -1,4 +1,3 @@
-import AllExperiences from "./AllExperiences";
 import ExperienceText from "./ExperienceText";
 import ExperienceTop from "./ExperienceTop";
 import { motion } from "framer-motion";
@@ -23,8 +22,6 @@ const ExperienceMain = () => {
       >
         <ExperienceTop />
       </motion.div>
-      <div className="w-full h-1 mt-4 bg-lightBrown lg:block sm:hidden"></div>
-      <AllExperiences />
     </div>
   );
 };

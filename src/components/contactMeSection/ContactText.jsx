@@ -1,36 +1,24 @@
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 const ContactText = () => {
   return (
     <>
       <div className="max-w-2xl mx-auto text-center space-y-8">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-4"
-        >
+        <div className="space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange to-cyan bg-clip-text text-transparent">
             Let's Create Something Amazing
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange to-cyan mx-auto rounded-full"></div>
-        </motion.div>
+        </div>
 
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+        <p 
           className="text-gray-300 text-lg leading-relaxed max-w-xl mx-auto"
         >
           I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
           Whether you have a question or just want to say hi, I'll try my best to get back to you!
-        </motion.p>
+        </p>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+        <div 
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
         >
           <a 
@@ -71,25 +59,18 @@ const ContactText = () => {
               <p className="text-gray-400 text-sm">Nairobi, Kenya</p>
             </div>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+        <p 
           className="text-gray-400 text-sm mt-12 bg-white/5 py-3 px-6 rounded-full inline-block"
         >
           Available for freelance work and full-time positions
-        </motion.p>
+        </p>
       </div>
 
       {/* Enhanced Floating WhatsApp Button */}
       <div className="fixed bottom-8 right-8 z-50">
         <div className="relative">
-          {/* Pulsing ring effect */}
-          <div className="absolute -inset-1 bg-[#25D366] rounded-full opacity-75 animate-ping"></div>
-          <div className="absolute -inset-1 bg-[#25D366] rounded-full opacity-50 animate-pulse"></div>
-          
           {/* Main button */}
           <a
             href="https://wa.me/254713258583"
