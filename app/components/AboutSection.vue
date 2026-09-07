@@ -95,7 +95,7 @@
 
             <!-- Download Resume -->
             <a
-              href="/biee.pdf"
+              href="/njeri.pdf"
               download
               class="inline-flex items-center rounded-md bg-blue-600 px-3 py-2 text-xs font-medium text-white transition duration-300 hover:bg-blue-500 sm:text-sm"
             >
@@ -105,7 +105,7 @@
 
             <!-- Download coverletter -->
             <a
-              href="/coverletter.pdf"
+              href="/cover.pdf"
               download
               class="inline-flex items-center rounded-md bg-blue-600 px-3 py-2 text-xs font-medium text-white transition duration-300 hover:bg-blue-500 sm:text-sm"
             >

@@ -122,26 +122,26 @@ const projects = [
     repo: 'https://github.com/nana-tec/kidsplayzone-website',
     featured: false,
   },
-  {
-    title: 'Grouplending Platform',
-    description: 'A full-featured blog with Markdown support, SEO optimization, and a content management system.',
-    techs: ['Nuxt', 'Nuxt Content', 'TypeScript'],
-    tags: ['Nuxt', 'TypeScript'],
+  // {
+  //   title: 'Grouplending Platform',
+  //   description: 'A full-featured blog with Markdown support, SEO optimization, and a content management system.',
+  //   techs: ['Nuxt', 'Nuxt Content', 'TypeScript'],
+  //   tags: ['Nuxt', 'TypeScript'],
   
-    demo: '#',
-    repo: 'https://github.com/abigael/blog-platform',
-    featured: false,
-  },
-  {
-    title: 'KRA Landing Page',
-    description: 'Real-time chat app with private rooms, file sharing, emoji reactions, and push notifications.',
-    techs: ['Vue', 'Firebase', 'WebSockets'],
-    tags: ['Vue'],
+  //   demo: '#',
+  //   repo: 'https://github.com/abigael/blog-platform',
+  //   featured: false,
+  // },
+  // {
+  //   title: 'KRA Landing Page',
+  //   description: 'Real-time chat app with private rooms, file sharing, emoji reactions, and push notifications.',
+  //   techs: ['Vue', 'Firebase', 'WebSockets'],
+  //   tags: ['Vue'],
   
-    demo: '#',
-    repo: 'https://github.com/abigael/chat-app',
-    featured: false,
-  },
+  //   demo: '#',
+  //   repo: 'https://github.com/abigael/chat-app',
+  //   featured: false,
+  // },
 ]
 
 const filteredProjects = computed(() =>

@@ -59,6 +59,7 @@ const categories = [
       { name: 'React', icon: '⚛️' },
       { name: 'Tailwind CSS', icon: '🌊' },
       { name: 'Pinia', icon: '🍍' },
+      { name: 'live.js',icon: '🎥' },
     ],
   },
   {

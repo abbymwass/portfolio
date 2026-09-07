@@ -76,7 +76,7 @@ onMounted(() => { timeout = setTimeout(typeLoop, 500) })
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
           </svg>
         </a>
-        <a href="mailto:abbymwass35@gmail.com" class="btn-outline-grad">Get in Touch</a>
+        <!-- <a href="mailto:abbymwass35@gmail.com" class="btn-outline-grad">Get in Touch</a> -->
       </div>
 
       <!-- Stats -->
@@ -89,12 +89,12 @@ onMounted(() => { timeout = setTimeout(typeLoop, 500) })
     </div>
 
     <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500 text-xs">
+    <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500 text-xs">
       <span>Scroll</span>
       <div class="w-5 h-8 rounded-full border border-slate-600 flex items-start justify-center pt-1.5">
         <div class="w-1 h-2 bg-cyan-400 rounded-full animate-bounce"></div>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
